@@ -1,0 +1,90 @@
+  # 🚀 PitchNest
+
+A modern web platform built to bridge the gap between **startup founders** and **investors**. This application allows startup founders to showcase their startups, while investors can highlight their past investments and discover promising ventures to support. With built-in communication tools like video chat and profile navigation, building connections has never been easier.
+
+---
+
+## 🌟 Features
+
+### 👥 User Roles
+
+- **Startup Founders**
+  - Register and create a profile
+  - Add and manage startup information
+  - Discover and connect with investors
+  - Schedule or join video chats with potential investors
+
+- **Investors**
+  - Register and create an investor profile
+  - Add previous investments and interests
+  - Browse and search for startups
+  - Initiate video meetings with founders
+
+### 🔍 Core Functionalities
+
+- 🔐 **Authentication & Authorization**
+  - Role-based access for investors and founders
+- 📈 **Startup Listing**
+  - Detailed startup profiles including industry, funding stage, pitch, etc.
+- 💼 **Investor Profiles**
+  - Investment history, focus areas, and portfolio
+- 🔎 **Search & Filter**
+  - Search investors or startups by industry, location, funding needs, and more
+- 📹 **Built-in Video Chat**
+  - Seamless video communication between users
+- 🧭 **Profile Navigation**
+  - Browse through startup and investor profiles in a clean UI
+- 💬 **Connection Requests**
+  - Request to connect and collaborate
+
+---
+
+## 🧪 Tech Stack
+
+
+- **Frontend**: Next.js, Tailwind CSS / ShadCN UI
+- **Backend**: Node.js, Express.js (or API routes via Next.js)
+- **Database**: MongoDB (with Mongoose)
+- **Authentication**: NextAuth.js / JWT
+- **Video Chat**: WebRTC / third-party API like Twilio or Agora
+- **Cloud Storage**: Cloudinary (for profile images, documents)
+- **Deployment**: Vercel (preferred for Next.js)
+
+---
+
+## 📁 Folder Structure 
+
+```bash
+root/
+├── app/ or pages/             # Next.js routing and layout
+│   ├── api/                   # API routes (if using Next.js backend)
+│   └── ...
+├── components/                # Reusable UI components
+├── lib/                       # Helpers, API clients, utilities
+├── models/                    # Mongoose models
+├── public/                    # Static assets
+├── styles/                    # Global styles
+├── .env.local                 # Environment variables
+├── next.config.js             # Next.js configuration
+├── README.md
+└── ...
+```
+
+## Clone the repository
+```bash
+git clone https://github.com/your-username/investor-startup-connect.git
+cd investor-startup-connect
+```
+
+## Install dependencies
+```bash
+npm install
+```
+
+## Create environment file
+```bash
+cp .env.example .env.local
+```
+```bash
+npm run dev
+```
