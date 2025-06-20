@@ -85,6 +85,7 @@ npm install
 ```bash
 cp .env.example .env.local
 ```
+## Run the Development Server
 ```bash
 npm run dev
 ```
