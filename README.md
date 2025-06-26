@@ -1,4 +1,23 @@
-  # 🚀 PitchNest
+<p align="center">
+  <img src="./assets/pitchnest-logo.jpg" width="200" />
+</p>
+
+<p align="center">
+  <a href="https://reactjs.org">
+    <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&flat&logo=react" alt="React">
+  </a>
+  <a href="https://nextjs.org/">
+    <img src="https://img.shields.io/badge/-Next.js-black?style=for-the-badge&flat&logo=next.js" alt="Next.js">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://t.me/pitchnest_od">
+    <img src="https://img.shields.io/badge/-Telegram-blue?style=for-the-badge&flat&logo=telegram" alt="Telegram">
+  </a>
+</p>
+
+# 🚀 PitchNest
 
 A modern web platform built to bridge the gap between **startup founders** and **investors**. This application allows startup founders to showcase their startups, while investors can highlight their past investments and discover promising ventures to support. With built-in communication tools like video chat and profile navigation, building connections has never been easier.
 
