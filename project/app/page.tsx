@@ -360,9 +360,9 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-6 italic">
-                  "PitchNest connected us with the perfect investor who
+                &quot;PitchNest connected us with the perfect investor who
                   understood our vision. The platform made the entire process
-                  seamless and efficient."
+                  seamless and efficient.&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
@@ -387,9 +387,9 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-6 italic">
-                  "As an investor, I've found exceptional startups through
+                &quot;As an investor, I&apos;ve found exceptional startups through
                   PitchNest. The quality of deals and founders on the platform
-                  is outstanding."
+                  is outstanding.&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
@@ -416,8 +416,8 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-6 italic">
-                  "The integrated communication tools and deal analytics helped
-                  us close our Series A in record time. Highly recommended!"
+                &quot;The integrated communication tools and deal analytics helped
+                  us close our Series A in record time. Highly recommended!&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
