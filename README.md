@@ -3,6 +3,12 @@
 </p>
 
 <p align="center">
+  <a href="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&flat">
+    <img src="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&flat" alt="Build Status">
+  </a>
+</p>
+
+<p align="center">
   <a href="https://reactjs.org">
     <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&flat&logo=react" alt="React">
   </a>
