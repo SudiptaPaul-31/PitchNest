@@ -1,3 +1,4 @@
+
 <p align="center">
   <img src="./assets/pitchnest-logo.jpg" width="200" />
 </p>
@@ -34,6 +35,7 @@ A modern web platform built to bridge the gap between **startup founders** and *
 ### 👥 User Roles
 
 - **Startup Founders**
+
   - Register and create a profile
   - Add and manage startup information
   - Discover and connect with investors
@@ -66,7 +68,6 @@ A modern web platform built to bridge the gap between **startup founders** and *
 
 ## 🧪 Tech Stack
 
-
 - **Frontend**: Next.js, Tailwind CSS / ShadCN UI
 - **Backend**: Node.js, Express.js (or API routes via Next.js)
 - **Database**: MongoDB (with Mongoose)
@@ -77,7 +78,7 @@ A modern web platform built to bridge the gap between **startup founders** and *
 
 ---
 
-## 📁 Folder Structure 
+## 📁 Folder Structure
 
 ```bash
 root/
@@ -96,21 +97,26 @@ root/
 ```
 
 ## Clone the repository
+
 ```bash
 git clone https://github.com/your-username/investor-startup-connect.git
 cd investor-startup-connect
 ```
 
 ## Install dependencies
+
 ```bash
 npm install
 ```
 
 ## Create environment file
+
 ```bash
 cp .env.example .env.local
 ```
+
 ## Run the Development Server
+
 ```bash
 npm run dev
 ```
