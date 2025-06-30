@@ -576,6 +576,7 @@ export default function Home() {
             </div>
           </div>
 
+
           <div className="border-t border-slate-800 pt-8 relative flex flex-col md:flex-row items-center justify-between">
             <p className="text-slate-400 text-center md:text-left mb-4 md:mb-0">
               © 2025 PitchNest. All rights reserved.
@@ -604,8 +605,6 @@ export default function Home() {
 
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
               <span className="text-slate-400 text-center">
-                Made with ❤️ for entrepreneurs worldwide
-              </span>
             </div>
           </div>
         </div>

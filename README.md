@@ -1,4 +1,30 @@
-  # 🚀 PitchNest
+
+<p align="center">
+  <img src="./assets/pitchnest-logo.jpg" width="200" />
+</p>
+
+<p align="center">
+  <a href="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&flat">
+    <img src="https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&flat" alt="Build Status">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://reactjs.org">
+    <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&flat&logo=react" alt="React">
+  </a>
+  <a href="https://nextjs.org/">
+    <img src="https://img.shields.io/badge/-Next.js-black?style=for-the-badge&flat&logo=next.js" alt="Next.js">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://t.me/pitchnest_od">
+    <img src="https://img.shields.io/badge/-Telegram-blue?style=for-the-badge&flat&logo=telegram" alt="Telegram">
+  </a>
+</p>
+
+# 🚀 PitchNest
 
 A modern web platform built to bridge the gap between **startup founders** and **investors**. This application allows startup founders to showcase their startups, while investors can highlight their past investments and discover promising ventures to support. With built-in communication tools like video chat and profile navigation, building connections has never been easier.
 
@@ -9,6 +35,7 @@ A modern web platform built to bridge the gap between **startup founders** and *
 ### 👥 User Roles
 
 - **Startup Founders**
+
   - Register and create a profile
   - Add and manage startup information
   - Discover and connect with investors
@@ -41,7 +68,6 @@ A modern web platform built to bridge the gap between **startup founders** and *
 
 ## 🧪 Tech Stack
 
-
 - **Frontend**: Next.js, Tailwind CSS / ShadCN UI
 - **Backend**: Node.js, Express.js (or API routes via Next.js)
 - **Database**: MongoDB (with Mongoose)
@@ -52,7 +78,7 @@ A modern web platform built to bridge the gap between **startup founders** and *
 
 ---
 
-## 📁 Folder Structure 
+## 📁 Folder Structure
 
 ```bash
 root/
@@ -71,21 +97,26 @@ root/
 ```
 
 ## Clone the repository
+
 ```bash
 git clone https://github.com/your-username/investor-startup-connect.git
 cd investor-startup-connect
 ```
 
 ## Install dependencies
+
 ```bash
 npm install
 ```
 
 ## Create environment file
+
 ```bash
 cp .env.example .env.local
 ```
+
 ## Run the Development Server
+
 ```bash
 npm run dev
 ```
