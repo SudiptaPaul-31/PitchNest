@@ -560,6 +560,8 @@ export default function Home() {
 
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
               <span className="text-slate-400 text-center">
+                Made with ❤️ for entrepreneurs worldwide
+              </span>
             </div>
           </div>
         </div>
