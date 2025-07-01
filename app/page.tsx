@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -19,6 +18,9 @@ import {
   CheckCircle,
   Star,
   PlayCircle,
+  Twitter,
+  Github,
+  Send,
 } from "lucide-react";
 
 export default function Home() {
@@ -114,7 +116,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Navigation */}
-
       <Navbar />
 
       {/* Hero Section */}
@@ -169,9 +170,7 @@ export default function Home() {
           </div>
 
           {/* Stats Section */}
-          <div
-            className={`grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
-          >
+          <div className={`grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`} >
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600 mb-2">
                 {animatedStats.startups.toLocaleString()}+
@@ -312,9 +311,9 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-6 italic">
-                  "PitchNest connected us with the perfect investor who
+                  &quot;PitchNest connected us with the perfect investor who
                   understood our vision. The platform made the entire process
-                  seamless and efficient."
+                  seamless and efficient.&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
@@ -339,9 +338,9 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-slate-600 mb-6 italic">
-                  "As an investor, I've found exceptional startups through
+                &quot;As an investor, I&apos;ve found exceptional startups through
                   PitchNest. The quality of deals and founders on the platform
-                  is outstanding."
+                  is outstanding.&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
@@ -366,10 +365,11 @@ export default function Home() {
                       className="h-5 w-5 text-yellow-400 fill-current"
                     />
                   ))}
-                </div>
+                </div> 
                 <p className="text-slate-600 mb-6 italic">
-                  "The integrated communication tools and deal analytics helped
-                  us close our Series A in record time. Highly recommended!"
+                &quot;The integrated communication tools and deal analytics helped
+                  us close our Series A in record time. Highly recommended!&quot;
+
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
@@ -528,13 +528,38 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-slate-400">
+
+          <div className="border-t border-slate-800 pt-8 relative flex flex-col md:flex-row items-center justify-between">
+
+            <p className="text-slate-400 text-center md:text-left mb-4 md:mb-0">
               © 2025 PitchNest. All rights reserved.
             </p>
-            <div className="flex items-center space-x-6 mt-4 md:mt-0">
-              <Globe className="h-5 w-5 text-slate-400" />
-              <span className="text-slate-400">
+
+            <div className="md:hidden mb-4">
+              <span className="text-slate-400 text-center block">
+                Made with ❤️ for entrepreneurs worldwide
+              </span>
+            </div>
+
+            <div className="flex items-center space-x-6 mb-4 md:mb-0">
+              <a
+                href="#"
+              >
+                <Twitter className="h-5 w-5 text-slate-400 hover:text-white transition" />
+              </a>
+              <a
+                href="https://github.com/SudiptaPaul-31/PitchNest"
+                target="_blank"
+              >
+                <Github className="h-5 w-5 text-slate-400 hover:text-white transition" />
+              </a>
+              <a href="https://t.me/pitchnest_od" target="_blank" >
+                <Send className="h-5 w-5 text-slate-400 hover:text-white transition" />
+              </a>
+            </div>
+
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
+              <span className="text-slate-400 text-center">
                 Made with ❤️ for entrepreneurs worldwide
               </span>
             </div>
