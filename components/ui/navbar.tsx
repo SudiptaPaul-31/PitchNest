@@ -1,6 +1,5 @@
-import React from 'react'
 import { Button } from '@/components/ui/button';
-import { Building2 } from 'lucide-react';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -9,11 +8,15 @@ const Navbar = () => {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-2 rounded-lg">
-                <Building2 className="h-6 w-6 text-white" />
+            <div className="flex items-center">
+              <div className="relative w-56 h-12">
+                <Image
+                  src="/pitchnest-logo.png"
+                  alt="PitchNest Logo"
+                  fill
+                  className="rounded-lg object-cover"
+                />
               </div>
-              <span className="text-xl font-bold text-slate-900">PitchNest</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">

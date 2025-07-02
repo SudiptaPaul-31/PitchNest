@@ -1,27 +1,25 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import Navbar from '@/components/ui/navbar';
-import { 
-  ArrowRight, 
-  Users, 
-  TrendingUp, 
-  Shield, 
-  Search, 
-  MessageCircle, 
-  Building2,
-  Zap,
-  Globe,
+import {
+  ArrowRight,
   CheckCircle,
-  Star,
-  PlayCircle,
-  Twitter,
   Github,
+  MessageCircle,
+  PlayCircle,
+  Search,
   Send,
+  Shield,
+  Star,
+  TrendingUp,
+  Twitter,
+  Zap
 } from "lucide-react";
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [animatedStats, setAnimatedStats] = useState({
@@ -437,11 +435,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
-              <div className="flex items-center space-x-2 mb-6">
-                <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-2 rounded-lg">
-                  <Building2 className="h-6 w-6 text-white" />
+              <div className="flex items-center mb-6">
+                <div className="relative w-56 h-12">
+                  <Image
+                    src="/pitchnest-logo.png"
+                    alt="PitchNest Logo"
+                    fill
+                    className="rounded-lg object-cover"
+                  />
                 </div>
-                <span className="text-xl font-bold text-white">PitchNest</span>
               </div>
               <p className="text-slate-400 leading-relaxed">
                 Connecting innovative startups with strategic investors to build
