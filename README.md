@@ -82,16 +82,19 @@ A modern web platform built to bridge the gap between **startup founders** and *
 
 ```bash
 root/
-├── app/ or pages/             # Next.js routing and layout
-│   ├── api/                   # API routes (if using Next.js backend)
+├── src/
+│   ├── app/             # Next.js routing and layout (App Router)
+│   ├── components/      # Reusable UI components
+│   │   └── ui/          # Atomic UI components
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Helpers, API clients, utilities
 │   └── ...
-├── components/                # Reusable UI components
-├── lib/                       # Helpers, API clients, utilities
-├── models/                    # Mongoose models
-├── public/                    # Static assets
-├── styles/                    # Global styles
-├── .env.local                 # Environment variables
-├── next.config.js             # Next.js configuration
+├── assets/              # Static assets (logo, etc.)
+├── public/              # (if/when used for static files)
+├── .env.local           # Environment variables
+├── next.config.js       # Next.js configuration
+├── tailwind.config.ts   # Tailwind CSS configuration
+├── tsconfig.json        # TypeScript configuration
 ├── README.md
 └── ...
 ```
