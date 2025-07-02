@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./assets/pitchnest-logo.jpg" width="200" />
+  <img src="/pitchnest-logo.png" width="200" />
 </p>
 
 <p align="center">
