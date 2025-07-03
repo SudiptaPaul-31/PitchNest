@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -114,9 +113,8 @@ export default function Home() {
       {/* Navigation */}
       <Navbar />
 
-
+      {/* Main Page */}
       <HomePage isVisible={isVisible} animatedStats={animatedStats} features={features} steps={steps} />
-
 
       {/* Social Proof Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
