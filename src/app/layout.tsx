@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   // Connect to MongoDB
-  // await connectDB();
+  await connectDB();
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
