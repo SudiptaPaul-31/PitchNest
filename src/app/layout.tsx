@@ -2,6 +2,8 @@ import connectDB from "config/db";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import ThemeProviderWrapper from "@/components/ui/ThemeProviderWrapper";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
     "Join the premier platform connecting innovative startups with strategic investors. Streamline your fundraising journey with AI-powered matching and integrated communication tools.",
 };
 
-export default async function RootLayout({
+export default  async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -19,8 +21,12 @@ export default async function RootLayout({
   // Connect to MongoDB
   await connectDB();
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProviderWrapper>
+          {children}
+        </ThemeProviderWrapper>
+      </body>
     </html>
   );
 }

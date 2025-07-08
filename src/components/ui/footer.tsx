@@ -1,55 +1,57 @@
-import React from 'react';
-import { Building2, Twitter, Github, Send } from 'lucide-react';
+import React from "react";
+import { Building2, Twitter, Github, Send } from "lucide-react";
 
 interface FooterProps {
   className?: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ className = '' }) => {
+const Footer: React.FC<FooterProps> = ({ className = "" }) => {
   const platformLinks = [
-    { name: 'For Startups', href: '#' },
-    { name: 'For Investors', href: '#' },
-    { name: 'Pricing', href: '#' },
-    { name: 'Success Stories', href: '#' },
+    { name: "For Startups", href: "#" },
+    { name: "For Investors", href: "#" },
+    { name: "Pricing", href: "#" },
+    { name: "Success Stories", href: "#" },
   ];
 
   const resourceLinks = [
-    { name: 'Help Center', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Webinars', href: '#' },
-    { name: 'API Docs', href: '#' },
+    { name: "Help Center", href: "#" },
+    { name: "Blog", href: "#" },
+    { name: "Webinars", href: "#" },
+    { name: "API Docs", href: "#" },
   ];
 
   const companyLinks = [
-    { name: 'About Us', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'Terms of Service', href: '#' },
+    { name: "About Us", href: "#" },
+    { name: "Careers", href: "#" },
+    { name: "Privacy Policy", href: "#" },
+    { name: "Terms of Service", href: "#" },
   ];
 
   const socialLinks = [
-    { 
-      name: 'Twitter', 
-      href: '#', 
+    {
+      name: "Twitter",
+      href: "#",
       icon: Twitter,
-      target: '_self'
+      target: "_self",
     },
-    { 
-      name: 'GitHub', 
-      href: 'https://github.com/SudiptaPaul-31/PitchNest', 
+    {
+      name: "GitHub",
+      href: "https://github.com/SudiptaPaul-31/PitchNest",
       icon: Github,
-      target: '_blank'
+      target: "_blank",
     },
-    { 
-      name: 'Telegram', 
-      href: 'https://t.me/pitchnest_od', 
+    {
+      name: "Telegram",
+      href: "https://t.me/pitchnest_od",
       icon: Send,
-      target: '_blank'
+      target: "_blank",
     },
   ];
 
   return (
-    <footer className={`bg-slate-900 text-slate-300 py-16 px-4 sm:px-6 lg:px-8 ${className}`}>
+    <footer
+      className={`bg-slate-900 dark:bg-black text-slate-300 dark:text-slate-200 py-16 px-4 sm:px-6 lg:px-8 ${className}`}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
@@ -72,8 +74,8 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <ul className="space-y-3">
               {platformLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="hover:text-white transition-colors"
                   >
                     {link.name}
@@ -89,8 +91,8 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <ul className="space-y-3">
               {resourceLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="hover:text-white transition-colors"
                   >
                     {link.name}
@@ -106,8 +108,8 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="hover:text-white transition-colors"
                   >
                     {link.name}
@@ -138,7 +140,11 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                   key={social.name}
                   href={social.href}
                   target={social.target}
-                  rel={social.target === '_blank' ? 'noopener noreferrer' : undefined}
+                  rel={
+                    social.target === "_blank"
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   className="text-slate-400 hover:text-white transition-colors"
                   aria-label={social.name}
                 >
