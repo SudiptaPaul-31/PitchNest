@@ -3,6 +3,12 @@ import mongoose from "mongoose";
 let isConnected: boolean = false;
 
 const connectDB = async (): Promise<void> => {
+  // Skip database connection in browser environment
+  if (typeof window !== 'undefined') {
+    console.log("🖥️  Running in browser - skipping MongoDB connection");
+    return;
+  }
+
   if (isConnected) {
     console.log("✅ MongoDB already connected.");
     return;
@@ -11,7 +17,8 @@ const connectDB = async (): Promise<void> => {
   const MONGO_URL = process.env.MONGO_URL;
 
   if (!MONGO_URL) {
-    throw new Error("❌ MONGO_URL is not defined in environment variables");
+    console.warn("⚠️ MONGO_URL is not defined in environment variables - running in limited mode");
+    return;
   }
 
   console.log("🔗 Connecting to MongoDB...");
@@ -26,8 +33,11 @@ const connectDB = async (): Promise<void> => {
       console.log("⚠️ MongoDB connection not ready");
     }
   } catch (err: any) {
-    console.error("❌ MongoDB connection failed:", err.message);
-    process.exit(1);
+    console.warn("⚠️ MongoDB connection failed:", err.message);
+    // Don't exit in development to allow frontend work to continue
+    if (process.env.NODE_ENV === 'production') {
+      process.exit(1);
+    }
   }
 };
 
