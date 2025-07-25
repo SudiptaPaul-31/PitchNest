@@ -1,4 +1,3 @@
-import connectDB from "config/db";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -13,13 +12,11 @@ export const metadata: Metadata = {
     "Join the premier platform connecting innovative startups with strategic investors. Streamline your fundraising journey with AI-powered matching and integrated communication tools.",
 };
 
-export default  async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  // Connect to MongoDB
-  await connectDB();
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
