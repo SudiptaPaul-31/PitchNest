@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button';
 import { Building2 } from 'lucide-react';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -20,7 +21,9 @@ const Navbar = () => {
               <a href="#features" className="text-slate-600 hover:text-slate-900 transition-colors">Features</a>
               <a href="#how-it-works" className="text-slate-600 hover:text-slate-900 transition-colors">How It Works</a>
               <a href="#about" className="text-slate-600 hover:text-slate-900 transition-colors">About</a>
-              <Button variant="outline" className="border-slate-300">Sign In</Button>
+              <Link href="/login">
+                <Button variant="outline" className="border-slate-300">Sign In</Button>
+              </Link>
               <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700">
                 Get Started
               </Button>
