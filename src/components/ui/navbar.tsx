@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Building2 } from 'lucide-react';
 import Link from 'next/link';
 import DarkModeToggle from "@/components/ui/DarkModeToggle";
-import Link from "next/link";
 
 const Navbar = () => {
   return (
