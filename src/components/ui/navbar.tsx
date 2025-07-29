@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Building2 } from 'lucide-react';
 import Link from 'next/link';
 import DarkModeToggle from "@/components/ui/DarkModeToggle";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -44,9 +45,11 @@ const Navbar = () => {
                   Sign In
                 </Button>
               </Link>
-              <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white">
-                Get Started
-              </Button>
+              <Link href="/signup">
+                <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white">
+                  Get Started
+                </Button>
+              </Link>
               <DarkModeToggle />
             </div>
           </div>
