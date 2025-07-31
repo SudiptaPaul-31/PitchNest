@@ -1,5 +1,7 @@
 import React from "react";
 import { Building2, Twitter, Github, Send } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 interface FooterProps {
   className?: string;
@@ -56,12 +58,21 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
           <div>
-            <div className="flex items-center space-x-2 mb-6">
+            <Link href="/" className="flex items-center  space-x-2">
+              <Image
+                src="/pitchnest-logo.jpg"
+                alt="pitchnest-logo"
+                width={100}
+                height={10}
+                className="w-40 h-20"
+              />
+            </Link>
+            {/* <div className="flex items-center space-x-2 mb-6">
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-2 rounded-lg">
                 <Building2 className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold text-white">PitchNest</span>
-            </div>
+            </div> */}
             <p className="text-slate-400 leading-relaxed">
               Connecting innovative startups with strategic investors to build
               the future of business.
